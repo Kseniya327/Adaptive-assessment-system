@@ -1,0 +1,956 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "section",
+      "name": "Теория чисел",
+      "id": "number_theory"
+    },
+    {
+      "type": "concept",
+      "name": "системы счисления",
+      "section": "number_theory",
+      "manual": true,
+      "id": "c_number_theory_системы_счисления"
+    },
+    {
+      "type": "definition",
+      "text": "способ записи чисел с помощью ограниченного набора символов",
+      "id": "def_c_number_theory_системы_счисления"
+    },
+    {
+      "type": "concept",
+      "name": "алгоритм евклида",
+      "section": "number_theory",
+      "manual": true,
+      "id": "c_number_theory_алгоритм_евклида"
+    },
+    {
+      "type": "definition",
+      "text": "метод нахождения наибольшего общего делителя двух целых чисел",
+      "id": "def_c_number_theory_алгоритм_евклида"
+    },
+    {
+      "type": "concept",
+      "name": "вычисление нод",
+      "section": "number_theory",
+      "manual": true,
+      "id": "c_number_theory_вычисление_нод"
+    },
+    {
+      "type": "definition",
+      "text": "нахождение наибольшего общего делителя двух чисел",
+      "id": "def_c_number_theory_вычисление_нод"
+    },
+    {
+      "type": "concept",
+      "name": "линейное представление нод",
+      "section": "number_theory",
+      "manual": true,
+      "id": "c_number_theory_линейное_представление_нод"
+    },
+    {
+      "type": "definition",
+      "text": "представление НОД в виде линейной комбинации исходных чисел",
+      "id": "def_c_number_theory_линейное_представление_нод"
+    },
+    {
+      "type": "concept",
+      "name": "основная теорема арифметики",
+      "section": "number_theory",
+      "manual": true,
+      "id": "c_number_theory_основная_теорема_арифметики"
+    },
+    {
+      "type": "definition",
+      "text": "каждое целое число, большее 1, единственным образом разлагается на простые множители",
+      "id": "def_c_number_theory_основная_теорема_арифметики"
+    },
+    {
+      "type": "concept",
+      "name": "сравнения по модулю",
+      "section": "number_theory",
+      "manual": true,
+      "id": "c_number_theory_сравнения_по_модулю"
+    },
+    {
+      "type": "definition",
+      "text": "отношение эквивалентности: a ≡ b (mod m), если m делит (a−b)",
+      "id": "def_c_number_theory_сравнения_по_модулю"
+    },
+    {
+      "type": "concept",
+      "name": "кольцо классов вычетов",
+      "section": "number_theory",
+      "manual": true,
+      "id": "c_number_theory_кольцо_классов_вычетов"
+    },
+    {
+      "type": "definition",
+      "text": "множество классов эквивалентности по модулю m с операциями сложения и умножения",
+      "id": "def_c_number_theory_кольцо_классов_вычетов"
+    },
+    {
+      "type": "concept",
+      "name": "полная система вычетов",
+      "section": "number_theory",
+      "manual": true,
+      "id": "c_number_theory_полная_система_вычетов"
+    },
+    {
+      "type": "definition",
+      "text": "набор, содержащий ровно по одному представителю из каждого класса вычетов",
+      "id": "def_c_number_theory_полная_система_вычетов"
+    },
+    {
+      "type": "concept",
+      "name": "приведённая система вычетов",
+      "section": "number_theory",
+      "manual": true,
+      "id": "c_number_theory_приведённая_система_вычетов"
+    },
+    {
+      "type": "definition",
+      "text": "часть полной системы вычетов, состоящая из чисел, взаимно простых с модулем",
+      "id": "def_c_number_theory_приведённая_система_вычетов"
+    },
+    {
+      "type": "concept",
+      "name": "малая теорема ферма",
+      "section": "number_theory",
+      "manual": true,
+      "id": "c_number_theory_малая_теорема_ферма"
+    },
+    {
+      "type": "definition",
+      "text": "если p простое, то a^p ≡ a (mod p); если a не кратно p, то a^(p−1) ≡ 1 (mod p)",
+      "id": "def_c_number_theory_малая_теорема_ферма"
+    },
+    {
+      "type": "concept",
+      "name": "теорема эйлера",
+      "section": "number_theory",
+      "manual": true,
+      "id": "c_number_theory_теорема_эйлера"
+    },
+    {
+      "type": "definition",
+      "text": "для взаимно простых a и m: a^φ(m) ≡ 1 (mod m)",
+      "id": "def_c_number_theory_теорема_эйлера"
+    },
+    {
+      "type": "concept",
+      "name": "функция эйлера",
+      "section": "number_theory",
+      "manual": true,
+      "id": "c_number_theory_функция_эйлера"
+    },
+    {
+      "type": "definition",
+      "text": "количество чисел от 1 до n, взаимно простых с n",
+      "id": "def_c_number_theory_функция_эйлера"
+    },
+    {
+      "type": "concept",
+      "name": "китайская теорема об остатках",
+      "section": "number_theory",
+      "manual": true,
+      "id": "c_number_theory_китайская_теорема_об_остатках"
+    },
+    {
+      "type": "definition",
+      "text": "система сравнений по попарно взаимно простым модулям имеет единственное решение",
+      "id": "def_c_number_theory_китайская_теорема_об_остатках"
+    },
+    {
+      "type": "concept",
+      "name": "система остаточных классов",
+      "section": "number_theory",
+      "manual": true,
+      "id": "c_number_theory_система_остаточных_классов"
+    },
+    {
+      "type": "definition",
+      "text": "непозиционная система счисления, представляющая число набором остатков",
+      "id": "def_c_number_theory_система_остаточных_классов"
+    },
+    {
+      "type": "concept",
+      "name": "простые числа",
+      "section": "number_theory",
+      "manual": true,
+      "id": "c_number_theory_простые_числа"
+    },
+    {
+      "type": "definition",
+      "text": "натуральные числа, имеющие ровно два положительных делителя",
+      "id": "def_c_number_theory_простые_числа"
+    },
+    {
+      "type": "concept",
+      "name": "решето эратосфена",
+      "section": "number_theory",
+      "manual": true,
+      "id": "c_number_theory_решето_эратосфена"
+    },
+    {
+      "type": "definition",
+      "text": "алгоритм нахождения всех простых чисел до заданного предела",
+      "id": "def_c_number_theory_решето_эратосфена"
+    },
+    {
+      "type": "concept",
+      "name": "тест миллера-рабина",
+      "section": "number_theory",
+      "manual": true,
+      "id": "c_number_theory_тест_миллера_рабина"
+    },
+    {
+      "type": "definition",
+      "text": "вероятностный тест для проверки числа на простоту",
+      "id": "def_c_number_theory_тест_миллера_рабина"
+    },
+    {
+      "type": "concept",
+      "name": "алгоритмы проверки простоты",
+      "section": "number_theory",
+      "manual": true,
+      "id": "c_number_theory_алгоритмы_проверки_простоты"
+    },
+    {
+      "type": "definition",
+      "text": "методы, определяющие, является ли число простым (решето Эратосфена, тест Миллера–Рабина)",
+      "id": "def_c_number_theory_алгоритмы_проверки_простоты"
+    },
+    {
+      "type": "section",
+      "name": "Базовые алгебраические структуры",
+      "id": "algebraic_structures"
+    },
+    {
+      "type": "concept",
+      "name": "кольца",
+      "section": "algebraic_structures",
+      "manual": true,
+      "id": "c_algebraic_structures_кольца"
+    },
+    {
+      "type": "definition",
+      "text": "множество с двумя операциями (сложение, умножение), удовлетворяющими аксиомам",
+      "id": "def_c_algebraic_structures_кольца"
+    },
+    {
+      "type": "concept",
+      "name": "поля",
+      "section": "algebraic_structures",
+      "manual": true,
+      "id": "c_algebraic_structures_поля"
+    },
+    {
+      "type": "definition",
+      "text": "коммутативное кольцо с единицей, где каждый ненулевой элемент обратим",
+      "id": "def_c_algebraic_structures_поля"
+    },
+    {
+      "type": "concept",
+      "name": "делители нуля",
+      "section": "algebraic_structures",
+      "manual": true,
+      "id": "c_algebraic_structures_делители_нуля"
+    },
+    {
+      "type": "definition",
+      "text": "ненулевые элементы, произведение которых равно нулю",
+      "id": "def_c_algebraic_structures_делители_нуля"
+    },
+    {
+      "type": "concept",
+      "name": "область целостности",
+      "section": "algebraic_structures",
+      "manual": true,
+      "id": "c_algebraic_structures_область_целостности"
+    },
+    {
+      "type": "definition",
+      "text": "коммутативное кольцо с единицей без делителей нуля",
+      "id": "def_c_algebraic_structures_область_целостности"
+    },
+    {
+      "type": "concept",
+      "name": "идеалы",
+      "section": "algebraic_structures",
+      "manual": true,
+      "id": "c_algebraic_structures_идеалы"
+    },
+    {
+      "type": "definition",
+      "text": "подмножество кольца, замкнутое относительно сложения и умножения на элементы кольца",
+      "id": "def_c_algebraic_structures_идеалы"
+    },
+    {
+      "type": "concept",
+      "name": "факторкольцо",
+      "section": "algebraic_structures",
+      "manual": true,
+      "id": "c_algebraic_structures_факторкольцо"
+    },
+    {
+      "type": "definition",
+      "text": "множество классов смежности кольца по идеалу",
+      "id": "def_c_algebraic_structures_факторкольцо"
+    },
+    {
+      "type": "concept",
+      "name": "максимальные идеалы",
+      "section": "algebraic_structures",
+      "manual": true,
+      "id": "c_algebraic_structures_максимальные_идеалы"
+    },
+    {
+      "type": "definition",
+      "text": "идеалы, не содержащиеся ни в каком другом собственном идеале",
+      "id": "def_c_algebraic_structures_максимальные_идеалы"
+    },
+    {
+      "type": "concept",
+      "name": "простые идеалы",
+      "section": "algebraic_structures",
+      "manual": true,
+      "id": "c_algebraic_structures_простые_идеалы"
+    },
+    {
+      "type": "definition",
+      "text": "идеалы, обладающие свойством: если a·b ∈ I, то a ∈ I или b ∈ I",
+      "id": "def_c_algebraic_structures_простые_идеалы"
+    },
+    {
+      "type": "concept",
+      "name": "группы",
+      "section": "algebraic_structures",
+      "manual": true,
+      "id": "c_algebraic_structures_группы"
+    },
+    {
+      "type": "definition",
+      "text": "множество с одной ассоциативной операцией, имеющей нейтральный и обратные элементы",
+      "id": "def_c_algebraic_structures_группы"
+    },
+    {
+      "type": "concept",
+      "name": "полугруппы",
+      "section": "algebraic_structures",
+      "manual": true,
+      "id": "c_algebraic_structures_полугруппы"
+    },
+    {
+      "type": "definition",
+      "text": "множество с ассоциативной бинарной операцией",
+      "id": "def_c_algebraic_structures_полугруппы"
+    },
+    {
+      "type": "concept",
+      "name": "подгруппы",
+      "section": "algebraic_structures",
+      "manual": true,
+      "id": "c_algebraic_structures_подгруппы"
+    },
+    {
+      "type": "definition",
+      "text": "подмножество группы, само являющееся группой",
+      "id": "def_c_algebraic_structures_подгруппы"
+    },
+    {
+      "type": "concept",
+      "name": "классы смежности",
+      "section": "algebraic_structures",
+      "manual": true,
+      "id": "c_algebraic_structures_классы_смежности"
+    },
+    {
+      "type": "definition",
+      "text": "множества вида g·H для подгруппы H",
+      "id": "def_c_algebraic_structures_классы_смежности"
+    },
+    {
+      "type": "concept",
+      "name": "теорема лагранжа",
+      "section": "algebraic_structures",
+      "manual": true,
+      "id": "c_algebraic_structures_теорема_лагранжа"
+    },
+    {
+      "type": "definition",
+      "text": "порядок конечной группы делится на порядок любой её подгруппы",
+      "id": "def_c_algebraic_structures_теорема_лагранжа"
+    },
+    {
+      "type": "concept",
+      "name": "гомоморфизм",
+      "section": "algebraic_structures",
+      "manual": true,
+      "id": "c_algebraic_structures_гомоморфизм"
+    },
+    {
+      "type": "definition",
+      "text": "отображение, сохраняющее операции",
+      "id": "def_c_algebraic_structures_гомоморфизм"
+    },
+    {
+      "type": "concept",
+      "name": "изоморфизм",
+      "section": "algebraic_structures",
+      "manual": true,
+      "id": "c_algebraic_structures_изоморфизм"
+    },
+    {
+      "type": "definition",
+      "text": "биективный гомоморфизм",
+      "id": "def_c_algebraic_structures_изоморфизм"
+    },
+    {
+      "type": "concept",
+      "name": "конечные поля",
+      "section": "algebraic_structures",
+      "manual": true,
+      "id": "c_algebraic_structures_конечные_поля"
+    },
+    {
+      "type": "definition",
+      "text": "поля с конечным числом элементов (мощность pⁿ)",
+      "id": "def_c_algebraic_structures_конечные_поля"
+    },
+    {
+      "type": "concept",
+      "name": "минимальные многочлены",
+      "section": "algebraic_structures",
+      "manual": true,
+      "id": "c_algebraic_structures_минимальные_многочлены"
+    },
+    {
+      "type": "definition",
+      "text": "многочлен наименьшей степени, корнем которого является данный элемент поля",
+      "id": "def_c_algebraic_structures_минимальные_многочлены"
+    },
+    {
+      "type": "concept",
+      "name": "структура конечного поля",
+      "section": "algebraic_structures",
+      "manual": true,
+      "id": "c_algebraic_structures_структура_конечного_поля"
+    },
+    {
+      "type": "definition",
+      "text": "конечное поле порядка pⁿ содержит простое подполе порядка p и является векторным пространством размерности n над ним",
+      "id": "def_c_algebraic_structures_структура_конечного_поля"
+    },
+    {
+      "type": "section",
+      "name": "Кольцо многочленов над полем",
+      "id": "polynomial_rings"
+    },
+    {
+      "type": "concept",
+      "name": "многочлен",
+      "section": "polynomial_rings",
+      "manual": true,
+      "id": "c_polynomial_rings_многочлен"
+    },
+    {
+      "type": "definition",
+      "text": "формальное выражение a_n xⁿ + ... + a₀",
+      "id": "def_c_polynomial_rings_многочлен"
+    },
+    {
+      "type": "concept",
+      "name": "корень многочлена",
+      "section": "polynomial_rings",
+      "manual": true,
+      "id": "c_polynomial_rings_корень_многочлена"
+    },
+    {
+      "type": "definition",
+      "text": "значение переменной, при котором многочлен обращается в ноль",
+      "id": "def_c_polynomial_rings_корень_многочлена"
+    },
+    {
+      "type": "concept",
+      "name": "формальное равенство многочленов",
+      "section": "polynomial_rings",
+      "manual": true,
+      "id": "c_polynomial_rings_формальное_равенство_многочленов"
+    },
+    {
+      "type": "definition",
+      "text": "совпадение всех коэффициентов",
+      "id": "def_c_polynomial_rings_формальное_равенство_многочленов"
+    },
+    {
+      "type": "concept",
+      "name": "кольцо многочленов",
+      "section": "polynomial_rings",
+      "manual": true,
+      "id": "c_polynomial_rings_кольцо_многочленов"
+    },
+    {
+      "type": "definition",
+      "text": "множество многочленов с коэффициентами из поля",
+      "id": "def_c_polynomial_rings_кольцо_многочленов"
+    },
+    {
+      "type": "concept",
+      "name": "алгоритм евклида для многочленов",
+      "section": "polynomial_rings",
+      "manual": true,
+      "id": "c_polynomial_rings_алгоритм_евклида_для_многочленов"
+    },
+    {
+      "type": "definition",
+      "text": "метод нахождения НОД двух многочленов",
+      "id": "def_c_polynomial_rings_алгоритм_евклида_для_многочленов"
+    },
+    {
+      "type": "concept",
+      "name": "линейное представление нод",
+      "section": "polynomial_rings",
+      "manual": true,
+      "id": "c_polynomial_rings_линейное_представление_нод"
+    },
+    {
+      "type": "definition",
+      "text": "существуют многочлены u, v: u·a + v·b = НОД(a,b)",
+      "id": "def_c_polynomial_rings_линейное_представление_нод"
+    },
+    {
+      "type": "concept",
+      "name": "теорема безу",
+      "section": "polynomial_rings",
+      "manual": true,
+      "id": "c_polynomial_rings_теорема_безу"
+    },
+    {
+      "type": "definition",
+      "text": "остаток от деления f(x) на (x−c) равен f(c)",
+      "id": "def_c_polynomial_rings_теорема_безу"
+    },
+    {
+      "type": "concept",
+      "name": "идеалы в кольце многочленов",
+      "section": "polynomial_rings",
+      "manual": true,
+      "id": "c_polynomial_rings_идеалы_в_кольце_многочленов"
+    },
+    {
+      "type": "definition",
+      "text": "подмножества, состоящие из всех многочленов, кратных фиксированному",
+      "id": "def_c_polynomial_rings_идеалы_в_кольце_многочленов"
+    },
+    {
+      "type": "concept",
+      "name": "факториальность кольца многочленов",
+      "section": "polynomial_rings",
+      "manual": true,
+      "id": "c_polynomial_rings_факториальность_кольца_многочленов"
+    },
+    {
+      "type": "definition",
+      "text": "любой многочлен однозначно разлагается на неприводимые множители",
+      "id": "def_c_polynomial_rings_факториальность_кольца_многочленов"
+    },
+    {
+      "type": "concept",
+      "name": "кратные корни",
+      "section": "polynomial_rings",
+      "manual": true,
+      "id": "c_polynomial_rings_кратные_корни"
+    },
+    {
+      "type": "definition",
+      "text": "корни, входящие в разложение более одного раза",
+      "id": "def_c_polynomial_rings_кратные_корни"
+    },
+    {
+      "type": "concept",
+      "name": "формальная производная",
+      "section": "polynomial_rings",
+      "manual": true,
+      "id": "c_polynomial_rings_формальная_производная"
+    },
+    {
+      "type": "definition",
+      "text": "алгебраическое определение производной многочлена",
+      "id": "def_c_polynomial_rings_формальная_производная"
+    },
+    {
+      "type": "concept",
+      "name": "теорема виета",
+      "section": "polynomial_rings",
+      "manual": true,
+      "id": "c_polynomial_rings_теорема_виета"
+    },
+    {
+      "type": "definition",
+      "text": "связь коэффициентов многочлена с его корнями",
+      "id": "def_c_polynomial_rings_теорема_виета"
+    },
+    {
+      "type": "concept",
+      "name": "основная теорема алгебры",
+      "section": "polynomial_rings",
+      "manual": true,
+      "id": "c_polynomial_rings_основная_теорема_алгебры"
+    },
+    {
+      "type": "definition",
+      "text": "каждый ненулевой многочлен с комплексными коэффициентами имеет комплексный корень",
+      "id": "def_c_polynomial_rings_основная_теорема_алгебры"
+    },
+    {
+      "type": "concept",
+      "name": "неприводимые многочлены",
+      "section": "polynomial_rings",
+      "manual": true,
+      "id": "c_polynomial_rings_неприводимые_многочлены"
+    },
+    {
+      "type": "definition",
+      "text": "многочлен степени выше 0, который не может быть разложен в произведение двух многочленов меньшей степени",
+      "id": "def_c_polynomial_rings_неприводимые_многочлены"
+    },
+    {
+      "type": "section",
+      "name": "Кодирование",
+      "id": "coding"
+    },
+    {
+      "type": "concept",
+      "name": "алфавитное кодирование",
+      "section": "coding",
+      "manual": true,
+      "id": "c_coding_алфавитное_кодирование"
+    },
+    {
+      "type": "definition",
+      "text": "представление сообщений символами алфавита",
+      "id": "def_c_coding_алфавитное_кодирование"
+    },
+    {
+      "type": "concept",
+      "name": "коды исправляющие ошибки",
+      "section": "coding",
+      "manual": true,
+      "id": "c_coding_коды_исправляющие_ошибки"
+    },
+    {
+      "type": "definition",
+      "text": "коды, позволяющие обнаруживать и исправлять ошибки",
+      "id": "def_c_coding_коды_исправляющие_ошибки"
+    },
+    {
+      "type": "concept",
+      "name": "линейные коды",
+      "section": "coding",
+      "manual": true,
+      "id": "c_coding_линейные_коды"
+    },
+    {
+      "type": "definition",
+      "text": "коды, образующие линейное подпространство",
+      "id": "def_c_coding_линейные_коды"
+    },
+    {
+      "type": "concept",
+      "name": "циклические коды",
+      "section": "coding",
+      "manual": true,
+      "id": "c_coding_циклические_коды"
+    },
+    {
+      "type": "definition",
+      "text": "линейные коды, замкнутые относительно циклического сдвига",
+      "id": "def_c_coding_циклические_коды"
+    },
+    {
+      "type": "concept",
+      "name": "код хэмминга",
+      "section": "coding",
+      "manual": true,
+      "id": "c_coding_код_хэмминга"
+    },
+    {
+      "type": "definition",
+      "text": "совершенный код, исправляющий одну ошибку",
+      "id": "def_c_coding_код_хэмминга"
+    },
+    {
+      "type": "concept",
+      "name": "основы криптографии",
+      "section": "coding",
+      "manual": true,
+      "id": "c_coding_основы_криптографии"
+    },
+    {
+      "type": "definition",
+      "text": "наука о защите информации (шифрование, подписи)",
+      "id": "def_c_coding_основы_криптографии"
+    },
+    {
+      "type": "concept",
+      "name": "коды боуза-чоудхури-хоквингема",
+      "section": "coding",
+      "manual": true,
+      "id": "c_coding_коды_боуза_чоудхури_хоквингема"
+    },
+    {
+      "type": "definition",
+      "text": "класс циклических кодов с заданным минимальным расстоянием, позволяющий исправлять множество ошибок",
+      "id": "def_c_coding_коды_боуза_чоудхури_хоквингема"
+    },
+    {
+      "type": "section",
+      "name": "Сети и графы",
+      "id": "graphs_networks"
+    },
+    {
+      "type": "concept",
+      "name": "сети",
+      "section": "graphs_networks",
+      "manual": true,
+      "id": "c_graphs_networks_сети"
+    },
+    {
+      "type": "definition",
+      "text": "ориентированные графы с источником и стоком",
+      "id": "def_c_graphs_networks_сети"
+    },
+    {
+      "type": "concept",
+      "name": "потоки",
+      "section": "graphs_networks",
+      "manual": true,
+      "id": "c_graphs_networks_потоки"
+    },
+    {
+      "type": "definition",
+      "text": "функции на рёбрах, удовлетворяющие законам сохранения",
+      "id": "def_c_graphs_networks_потоки"
+    },
+    {
+      "type": "concept",
+      "name": "задача о максимальном потоке",
+      "section": "graphs_networks",
+      "manual": true,
+      "id": "c_graphs_networks_задача_о_максимальном_потоке"
+    },
+    {
+      "type": "definition",
+      "text": "нахождение наибольшего потока из источника в сток",
+      "id": "def_c_graphs_networks_задача_о_максимальном_потоке"
+    },
+    {
+      "type": "concept",
+      "name": "теорема форда-фалкерсона",
+      "section": "graphs_networks",
+      "manual": true,
+      "id": "c_graphs_networks_теорема_форда-фалкерсона"
+    },
+    {
+      "type": "definition",
+      "text": "максимальный поток равен минимальному разрезу",
+      "id": "def_c_graphs_networks_теорема_форда-фалкерсона"
+    },
+    {
+      "type": "concept",
+      "name": "задача о критическом пути",
+      "section": "graphs_networks",
+      "manual": true,
+      "id": "c_graphs_networks_задача_о_критическом_пути"
+    },
+    {
+      "type": "definition",
+      "text": "определение самого длинного пути в сетевом графике",
+      "id": "def_c_graphs_networks_задача_о_критическом_пути"
+    },
+    {
+      "type": "concept",
+      "name": "перечисление графов",
+      "section": "graphs_networks",
+      "manual": true,
+      "id": "c_graphs_networks_перечисление_графов"
+    },
+    {
+      "type": "definition",
+      "text": "подсчёт количества неизоморфных графов с заданными свойствами",
+      "id": "def_c_graphs_networks_перечисление_графов"
+    }
+  ],
+  "edges": [
+    {"relation": "HAS_CONCEPT", "source": "number_theory", "target": "c_number_theory_системы_счисления", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_number_theory_системы_счисления", "target": "def_c_number_theory_системы_счисления"},
+    {"relation": "HAS_CONCEPT", "source": "number_theory", "target": "c_number_theory_алгоритм_евклида", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_number_theory_алгоритм_евклида", "target": "def_c_number_theory_алгоритм_евклида"},
+    {"relation": "REALIZES", "source": "c_number_theory_алгоритм_евклида", "target": "c_number_theory_вычисление_нод", "weight": 0.9},
+    {"relation": "HAS_CONCEPT", "source": "number_theory", "target": "c_number_theory_вычисление_нод", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_number_theory_вычисление_нод", "target": "def_c_number_theory_вычисление_нод"},
+    {"relation": "HAS_CONCEPT", "source": "number_theory", "target": "c_number_theory_линейное_представление_нод", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_number_theory_линейное_представление_нод", "target": "def_c_number_theory_линейное_представление_нод"},
+    {"relation": "HAS_CONCEPT", "source": "number_theory", "target": "c_number_theory_основная_теорема_арифметики", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_number_theory_основная_теорема_арифметики", "target": "def_c_number_theory_основная_теорема_арифметики"},
+    {"relation": "GENERALIZES", "source": "c_number_theory_основная_теорема_арифметики", "target": "c_number_theory_простые_числа", "weight": 0.8},
+    {"relation": "HAS_CONCEPT", "source": "number_theory", "target": "c_number_theory_сравнения_по_модулю", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_number_theory_сравнения_по_модулю", "target": "def_c_number_theory_сравнения_по_модулю"},
+    {"relation": "HAS_CONCEPT", "source": "number_theory", "target": "c_number_theory_кольцо_классов_вычетов", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_number_theory_кольцо_классов_вычетов", "target": "def_c_number_theory_кольцо_классов_вычетов"},
+    {"relation": "AGGREGATION", "source": "c_number_theory_кольцо_классов_вычетов", "target": "c_number_theory_полная_система_вычетов", "weight": 0.7},
+    {"relation": "AGGREGATION", "source": "c_number_theory_кольцо_классов_вычетов", "target": "c_number_theory_приведённая_система_вычетов", "weight": 0.7},
+    {"relation": "HAS_CONCEPT", "source": "number_theory", "target": "c_number_theory_полная_система_вычетов", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_number_theory_полная_система_вычетов", "target": "def_c_number_theory_полная_система_вычетов"},
+    {"relation": "AGGREGATION", "source": "c_number_theory_полная_система_вычетов", "target": "c_number_theory_приведённая_система_вычетов", "weight": 0.8},
+    {"relation": "HAS_CONCEPT", "source": "number_theory", "target": "c_number_theory_приведённая_система_вычетов", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_number_theory_приведённая_система_вычетов", "target": "def_c_number_theory_приведённая_система_вычетов"},
+    {"relation": "HAS_CONCEPT", "source": "number_theory", "target": "c_number_theory_малая_теорема_ферма", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_number_theory_малая_теорема_ферма", "target": "def_c_number_theory_малая_теорема_ферма"},
+    {"relation": "GENERALIZES", "source": "c_number_theory_теорема_эйлера", "target": "c_number_theory_малая_теорема_ферма", "weight": 0.8},
+    {"relation": "HAS_CONCEPT", "source": "number_theory", "target": "c_number_theory_теорема_эйлера", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_number_theory_теорема_эйлера", "target": "def_c_number_theory_теорема_эйлера"},
+    {"relation": "ASSOCIATION", "source": "c_number_theory_теорема_эйлера", "target": "c_number_theory_функция_эйлера", "weight": 0.9},
+    {"relation": "HAS_CONCEPT", "source": "number_theory", "target": "c_number_theory_функция_эйлера", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_number_theory_функция_эйлера", "target": "def_c_number_theory_функция_эйлера"},
+    {"relation": "HAS_CONCEPT", "source": "number_theory", "target": "c_number_theory_китайская_теорема_об_остатках", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_number_theory_китайская_теорема_об_остатках", "target": "def_c_number_theory_китайская_теорема_об_остатках"},
+    {"relation": "REALIZES", "source": "c_number_theory_китайская_теорема_об_остатках", "target": "c_number_theory_система_остаточных_классов", "weight": 0.8},
+    {"relation": "HAS_CONCEPT", "source": "number_theory", "target": "c_number_theory_система_остаточных_классов", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_number_theory_система_остаточных_классов", "target": "def_c_number_theory_система_остаточных_классов"},
+    {"relation": "HAS_CONCEPT", "source": "number_theory", "target": "c_number_theory_простые_числа", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_number_theory_простые_числа", "target": "def_c_number_theory_простые_числа"},
+    {"relation": "HAS_CONCEPT", "source": "number_theory", "target": "c_number_theory_решето_эратосфена", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_number_theory_решето_эратосфена", "target": "def_c_number_theory_решето_эратосфена"},
+    {"relation": "HAS_CONCEPT", "source": "number_theory", "target": "c_number_theory_тест_миллера_рабина", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_number_theory_тест_миллера_рабина", "target": "def_c_number_theory_тест_миллера_рабина"},
+    {"relation": "HAS_CONCEPT", "source": "number_theory", "target": "c_number_theory_алгоритмы_проверки_простоты", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_number_theory_алгоритмы_проверки_простоты", "target": "def_c_number_theory_алгоритмы_проверки_простоты"},
+    {"relation": "REALIZES", "source": "c_number_theory_решето_эратосфена", "target": "c_number_theory_алгоритмы_проверки_простоты", "weight": 0.9},
+    {"relation": "REALIZES", "source": "c_number_theory_тест_миллера_рабина", "target": "c_number_theory_алгоритмы_проверки_простоты", "weight": 0.9},
+    {"relation": "HAS_CONCEPT", "source": "algebraic_structures", "target": "c_algebraic_structures_кольца", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_algebraic_structures_кольца", "target": "def_c_algebraic_structures_кольца"},
+    {"relation": "GENERALIZES", "source": "c_algebraic_structures_поля", "target": "c_algebraic_structures_кольца", "weight": 0.9},
+    {"relation": "HAS_CONCEPT", "source": "algebraic_structures", "target": "c_algebraic_structures_поля", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_algebraic_structures_поля", "target": "def_c_algebraic_structures_поля"},
+    {"relation": "HAS_CONCEPT", "source": "algebraic_structures", "target": "c_algebraic_structures_делители_нуля", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_algebraic_structures_делители_нуля", "target": "def_c_algebraic_structures_делители_нуля"},
+    {"relation": "ASSOCIATION", "source": "c_algebraic_structures_делители_нуля", "target": "c_algebraic_structures_область_целостности", "weight": 0.7},
+    {"relation": "HAS_CONCEPT", "source": "algebraic_structures", "target": "c_algebraic_structures_область_целостности", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_algebraic_structures_область_целостности", "target": "def_c_algebraic_structures_область_целостности"},
+    {"relation": "HAS_CONCEPT", "source": "algebraic_structures", "target": "c_algebraic_structures_идеалы", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_algebraic_structures_идеалы", "target": "def_c_algebraic_structures_идеалы"},
+    {"relation": "GENERALIZES", "source": "c_algebraic_structures_идеалы", "target": "c_algebraic_structures_максимальные_идеалы", "weight": 0.8},
+    {"relation": "GENERALIZES", "source": "c_algebraic_structures_идеалы", "target": "c_algebraic_structures_простые_идеалы", "weight": 0.8},
+    {"relation": "HAS_CONCEPT", "source": "algebraic_structures", "target": "c_algebraic_structures_факторкольцо", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_algebraic_structures_факторкольцо", "target": "def_c_algebraic_structures_факторкольцо"},
+    {"relation": "COMPOSITION", "source": "c_algebraic_structures_факторкольцо", "target": "c_algebraic_structures_идеалы", "weight": 0.8},
+    {"relation": "HAS_CONCEPT", "source": "algebraic_structures", "target": "c_algebraic_structures_максимальные_идеалы", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_algebraic_structures_максимальные_идеалы", "target": "def_c_algebraic_structures_максимальные_идеалы"},
+    {"relation": "HAS_CONCEPT", "source": "algebraic_structures", "target": "c_algebraic_structures_простые_идеалы", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_algebraic_structures_простые_идеалы", "target": "def_c_algebraic_structures_простые_идеалы"},
+    {"relation": "HAS_CONCEPT", "source": "algebraic_structures", "target": "c_algebraic_structures_группы", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_algebraic_structures_группы", "target": "def_c_algebraic_structures_группы"},
+    {"relation": "GENERALIZES", "source": "c_algebraic_structures_группы", "target": "c_algebraic_structures_полугруппы", "weight": 0.8},
+    {"relation": "COMPOSITION", "source": "c_algebraic_structures_группы", "target": "c_algebraic_structures_подгруппы", "weight": 0.8},
+    {"relation": "ASSOCIATION", "source": "c_algebraic_structures_группы", "target": "c_algebraic_structures_классы_смежности", "weight": 0.7},
+    {"relation": "HAS_CONCEPT", "source": "algebraic_structures", "target": "c_algebraic_structures_полугруппы", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_algebraic_structures_полугруппы", "target": "def_c_algebraic_structures_полугруппы"},
+    {"relation": "HAS_CONCEPT", "source": "algebraic_structures", "target": "c_algebraic_structures_подгруппы", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_algebraic_structures_подгруппы", "target": "def_c_algebraic_structures_подгруппы"},
+    {"relation": "AGGREGATION", "source": "c_algebraic_structures_подгруппы", "target": "c_algebraic_structures_теорема_лагранжа", "weight": 0.7},
+    {"relation": "HAS_CONCEPT", "source": "algebraic_structures", "target": "c_algebraic_structures_классы_смежности", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_algebraic_structures_классы_смежности", "target": "def_c_algebraic_structures_классы_смежности"},
+    {"relation": "HAS_CONCEPT", "source": "algebraic_structures", "target": "c_algebraic_structures_теорема_лагранжа", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_algebraic_structures_теорема_лагранжа", "target": "def_c_algebraic_structures_теорема_лагранжа"},
+    {"relation": "HAS_CONCEPT", "source": "algebraic_structures", "target": "c_algebraic_structures_гомоморфизм", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_algebraic_structures_гомоморфизм", "target": "def_c_algebraic_structures_гомоморфизм"},
+    {"relation": "HAS_CONCEPT", "source": "algebraic_structures", "target": "c_algebraic_structures_изоморфизм", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_algebraic_structures_изоморфизм", "target": "def_c_algebraic_structures_изоморфизм"},
+    {"relation": "GENERALIZES", "source": "c_algebraic_structures_гомоморфизм", "target": "c_algebraic_structures_изоморфизм", "weight": 0.8},
+    {"relation": "HAS_CONCEPT", "source": "algebraic_structures", "target": "c_algebraic_structures_конечные_поля", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_algebraic_structures_конечные_поля", "target": "def_c_algebraic_structures_конечные_поля"},
+    {"relation": "GENERALIZES", "source": "c_algebraic_structures_поля", "target": "c_algebraic_structures_конечные_поля", "weight": 0.8},
+    {"relation": "HAS_CONCEPT", "source": "algebraic_structures", "target": "c_algebraic_structures_минимальные_многочлены", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_algebraic_structures_минимальные_многочлены", "target": "def_c_algebraic_structures_минимальные_многочлены"},
+    {"relation": "ASSOCIATION", "source": "c_algebraic_structures_минимальные_многочлены", "target": "c_polynomial_rings_многочлен", "weight": 0.7},
+    {"relation": "HAS_CONCEPT", "source": "algebraic_structures", "target": "c_algebraic_structures_структура_конечного_поля", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_algebraic_structures_структура_конечного_поля", "target": "def_c_algebraic_structures_структура_конечного_поля"},
+    {"relation": "ASSOCIATION", "source": "c_algebraic_structures_конечные_поля", "target": "c_algebraic_structures_структура_конечного_поля", "weight": 0.7},
+    {"relation": "HAS_CONCEPT", "source": "polynomial_rings", "target": "c_polynomial_rings_многочлен", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_polynomial_rings_многочлен", "target": "def_c_polynomial_rings_многочлен"},
+    {"relation": "HAS_CONCEPT", "source": "polynomial_rings", "target": "c_polynomial_rings_корень_многочлена", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_polynomial_rings_корень_многочлена", "target": "def_c_polynomial_rings_корень_многочлена"},
+    {"relation": "GENERALIZES", "source": "c_polynomial_rings_многочлен", "target": "c_polynomial_rings_формальное_равенство_многочленов", "weight": 0.8},
+    {"relation": "GENERALIZES", "source": "c_polynomial_rings_многочлен", "target": "c_polynomial_rings_кольцо_многочленов", "weight": 0.8},
+    {"relation": "HAS_CONCEPT", "source": "polynomial_rings", "target": "c_polynomial_rings_формальное_равенство_многочленов", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_polynomial_rings_формальное_равенство_многочленов", "target": "def_c_polynomial_rings_формальное_равенство_многочленов"},
+    {"relation": "HAS_CONCEPT", "source": "polynomial_rings", "target": "c_polynomial_rings_кольцо_многочленов", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_polynomial_rings_кольцо_многочленов", "target": "def_c_polynomial_rings_кольцо_многочленов"},
+    {"relation": "HAS_CONCEPT", "source": "polynomial_rings", "target": "c_polynomial_rings_алгоритм_евклида_для_многочленов", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_polynomial_rings_алгоритм_евклида_для_многочленов", "target": "def_c_polynomial_rings_алгоритм_евклида_для_многочленов"},
+    {"relation": "REALIZES", "source": "c_polynomial_rings_алгоритм_евклида_для_многочленов", "target": "c_polynomial_rings_линейное_представление_нод", "weight": 0.8},
+    {"relation": "HAS_CONCEPT", "source": "polynomial_rings", "target": "c_polynomial_rings_линейное_представление_нод", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_polynomial_rings_линейное_представление_нод", "target": "def_c_polynomial_rings_линейное_представление_нод"},
+    {"relation": "HAS_CONCEPT", "source": "polynomial_rings", "target": "c_polynomial_rings_теорема_безу", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_polynomial_rings_теорема_безу", "target": "def_c_polynomial_rings_теорема_безу"},
+    {"relation": "REALIZES", "source": "c_polynomial_rings_теорема_безу", "target": "c_polynomial_rings_корень_многочлена", "weight": 0.9},
+    {"relation": "HAS_CONCEPT", "source": "polynomial_rings", "target": "c_polynomial_rings_идеалы_в_кольце_многочленов", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_polynomial_rings_идеалы_в_кольце_многочленов", "target": "def_c_polynomial_rings_идеалы_в_кольце_многочленов"},
+    {"relation": "GENERALIZES", "source": "c_algebraic_structures_идеалы", "target": "c_polynomial_rings_идеалы_в_кольце_многочленов", "weight": 0.8},
+    {"relation": "HAS_CONCEPT", "source": "polynomial_rings", "target": "c_polynomial_rings_факториальность_кольца_многочленов", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_polynomial_rings_факториальность_кольца_многочленов", "target": "def_c_polynomial_rings_факториальность_кольца_многочленов"},
+    {"relation": "GENERALIZES", "source": "c_number_theory_основная_теорема_арифметики", "target": "c_polynomial_rings_факториальность_кольца_многочленов", "weight": 0.7},
+    {"relation": "HAS_CONCEPT", "source": "polynomial_rings", "target": "c_polynomial_rings_кратные_корни", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_polynomial_rings_кратные_корни", "target": "def_c_polynomial_rings_кратные_корни"},
+    {"relation": "ASSOCIATION", "source": "c_polynomial_rings_кратные_корни", "target": "c_polynomial_rings_формальная_производная", "weight": 0.9},
+    {"relation": "HAS_CONCEPT", "source": "polynomial_rings", "target": "c_polynomial_rings_формальная_производная", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_polynomial_rings_формальная_производная", "target": "def_c_polynomial_rings_формальная_производная"},
+    {"relation": "HAS_CONCEPT", "source": "polynomial_rings", "target": "c_polynomial_rings_теорема_виета", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_polynomial_rings_теорема_виета", "target": "def_c_polynomial_rings_теорема_виета"},
+    {"relation": "ASSOCIATION", "source": "c_polynomial_rings_теорема_виета", "target": "c_polynomial_rings_корень_многочлена", "weight": 0.8},
+    {"relation": "HAS_CONCEPT", "source": "polynomial_rings", "target": "c_polynomial_rings_основная_теорема_алгебры", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_polynomial_rings_основная_теорема_алгебры", "target": "def_c_polynomial_rings_основная_теорема_алгебры"},
+    {"relation": "GENERALIZES", "source": "c_polynomial_rings_основная_теорема_алгебры", "target": "c_polynomial_rings_корень_многочлена", "weight": 0.8},
+    {"relation": "HAS_CONCEPT", "source": "polynomial_rings", "target": "c_polynomial_rings_неприводимые_многочлены", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_polynomial_rings_неприводимые_многочлены", "target": "def_c_polynomial_rings_неприводимые_многочлены"},
+    {"relation": "ASSOCIATION", "source": "c_polynomial_rings_факториальность_кольца_многочленов", "target": "c_polynomial_rings_неприводимые_многочлены", "weight": 0.8},
+    {"relation": "HAS_CONCEPT", "source": "coding", "target": "c_coding_алфавитное_кодирование", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_coding_алфавитное_кодирование", "target": "def_c_coding_алфавитное_кодирование"},
+    {"relation": "HAS_CONCEPT", "source": "coding", "target": "c_coding_коды_исправляющие_ошибки", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_coding_коды_исправляющие_ошибки", "target": "def_c_coding_коды_исправляющие_ошибки"},
+    {"relation": "HAS_CONCEPT", "source": "coding", "target": "c_coding_линейные_коды", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_coding_линейные_коды", "target": "def_c_coding_линейные_коды"},
+    {"relation": "GENERALIZES", "source": "c_coding_линейные_коды", "target": "c_coding_циклические_коды", "weight": 0.8},
+    {"relation": "HAS_CONCEPT", "source": "coding", "target": "c_coding_циклические_коды", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_coding_циклические_коды", "target": "def_c_coding_циклические_коды"},
+    {"relation": "HAS_CONCEPT", "source": "coding", "target": "c_coding_код_хэмминга", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_coding_код_хэмминга", "target": "def_c_coding_код_хэмминга"},
+    {"relation": "HAS_CONCEPT", "source": "coding", "target": "c_coding_основы_криптографии", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_coding_основы_криптографии", "target": "def_c_coding_основы_криптографии"},
+    {"relation": "ASSOCIATION", "source": "c_coding_коды_исправляющие_ошибки", "target": "c_coding_основы_криптографии", "weight": 0.6},
+    {"relation": "HAS_CONCEPT", "source": "coding", "target": "c_coding_коды_боуза_чоудхури_хоквингема", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_coding_коды_боуза_чоудхури_хоквингема", "target": "def_c_coding_коды_боуза_чоудхури_хоквингема"},
+    {"relation": "GENERALIZES", "source": "c_coding_циклические_коды", "target": "c_coding_коды_боуза_чоудхури_хоквингема", "weight": 0.8},
+    {"relation": "HAS_CONCEPT", "source": "graphs_networks", "target": "c_graphs_networks_сети", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_graphs_networks_сети", "target": "def_c_graphs_networks_сети"},
+    {"relation": "HAS_CONCEPT", "source": "graphs_networks", "target": "c_graphs_networks_потоки", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_graphs_networks_потоки", "target": "def_c_graphs_networks_потоки"},
+    {"relation": "COMPOSITION", "source": "c_graphs_networks_сети", "target": "c_graphs_networks_потоки", "weight": 0.8},
+    {"relation": "HAS_CONCEPT", "source": "graphs_networks", "target": "c_graphs_networks_задача_о_максимальном_потоке", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_graphs_networks_задача_о_максимальном_потоке", "target": "def_c_graphs_networks_задача_о_максимальном_потоке"},
+    {"relation": "ASSOCIATION", "source": "c_graphs_networks_задача_о_максимальном_потоке", "target": "c_graphs_networks_теорема_форда-фалкерсона", "weight": 0.9},
+    {"relation": "HAS_CONCEPT", "source": "graphs_networks", "target": "c_graphs_networks_теорема_форда-фалкерсона", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_graphs_networks_теорема_форда-фалкерсона", "target": "def_c_graphs_networks_теорема_форда-фалкерсона"},
+    {"relation": "REALIZES", "source": "c_graphs_networks_теорема_форда-фалкерсона", "target": "c_graphs_networks_задача_о_максимальном_потоке", "weight": 0.9},
+    {"relation": "HAS_CONCEPT", "source": "graphs_networks", "target": "c_graphs_networks_задача_о_критическом_пути", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_graphs_networks_задача_о_критическом_пути", "target": "def_c_graphs_networks_задача_о_критическом_пути"},
+    {"relation": "ASSOCIATION", "source": "c_graphs_networks_задача_о_критическом_пути", "target": "c_graphs_networks_сети", "weight": 0.7},
+    {"relation": "HAS_CONCEPT", "source": "graphs_networks", "target": "c_graphs_networks_перечисление_графов", "weight": 1.0},
+    {"relation": "DEFINES", "source": "c_graphs_networks_перечисление_графов", "target": "def_c_graphs_networks_перечисление_графов"}
+  ]
+}
