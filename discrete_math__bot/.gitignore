@@ -6,6 +6,37 @@ __pycache__/
 # C extensions
 *.so
 
+# Виртуальное окружение
+venv/
+env/
+.venv/
+
+# Файлы с конфиденциальными данными
+.env
+
+# Кэш Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Базы данных (локальные)
+data/*.db
+data/*.sqlite
+
+# Граф онтологии (если не нужно хранить в репозитории)
+data/graph.json
+
+# IDE
+.vscode/
+.idea/
+
+# Логи
+*.log
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
 # Distribution / packaging
 .Python
 build/
